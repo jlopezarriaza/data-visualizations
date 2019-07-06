@@ -49,16 +49,3 @@ anim = ggmap::ggmap(base_map) +
 
 
 anim_save('~/Desktop/test-animation.gif' , anim, fps = 5, start_pause = 1, end_pause = 25)
-
-
-# tree_plot <- ggmap::ggmap(base_map) +
-#   coord_cartesian() +
-#   geom_point(aes(x = longitude, y = latitude),
-#              data = filtered.tree.data,
-#              alpha = 0.75) +
-#   transition_time(plant_date)
-# viridis::scale_fill_viridis()
-
-
-# gganimate(tree_plot)
-
